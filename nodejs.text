@@ -1,4 +1,10 @@
 bai temppalate engines
 vao tran doc pugjs
+
 bai query pqrameter
+
 bai method POST nhan req.body cai npm install body-parser -- save
+
+bai npm install --save-dev nodemon tiep vao file package.jon sua o duoi script :{ "start" : " nodemon index.js"} tiep vao treminal an npm start
+
+bài tích hợp database (lowdb)
