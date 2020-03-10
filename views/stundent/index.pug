@@ -1,9 +1,12 @@
 h1 stundent 
 
-form(action="/stundent/seach", method="GET")
+form(action="/student/seach", method="GET")
 	input(type="text", name="q")
 	button an
-a(href="/stundent/create") newCreate	
+a(href="/student/create") newCreate	
 ul
 	each student,index in students
-		li= index +':'+student.name
+		li 	
+			span= student.name
+			span &nbsp
+			a(href='/student/' + student.id) view
