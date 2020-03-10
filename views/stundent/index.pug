@@ -1,0 +1,9 @@
+h1 stundent 
+
+form(action="/stundent/seach", method="GET")
+	input(type="text", name="q")
+	button an
+a(href="/stundent/create") newCreate	
+ul
+	each student,index in students
+		li= index +':'+student.name
