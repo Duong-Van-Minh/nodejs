@@ -1,12 +1,14 @@
-h1 stundent 
+extends ../layouts/layout.pug
+block content
+	h1 stundent 
 
-form(action="/student/seach", method="GET")
-	input(type="text", name="q")
-	button an
-a(href="/student/create") newCreate	
-ul
-	each student,index in students
-		li 	
-			span= student.name
-			span &nbsp
-			a(href='/student/' + student.id) view
+	form(action="/student/seach", method="GET")
+		input(type="text", name="q")
+		button an
+	a(href="/student/create") newCreate	
+	ul
+		each student,index in students
+			li 	
+				span= student.name
+				span &nbsp
+				a(href='/student/' + student.id) view
