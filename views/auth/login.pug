@@ -1,0 +1,18 @@
+extends ../layouts/layout.pug
+block content
+	.container
+		
+
+		h1 hello wecome to screen login 
+		if errors
+			each error in errors
+				.alert.alert-danger= error
+		form( method="POST")
+			.form-group
+				label(for="email") email
+				input#email.form-control(type="email",name="email",value = value ? value.email : '')
+			.form-group
+				label(for="password") password
+				input#password.form-control(type="password",name="password", value = value ? value.password : '')
+			.form-group
+				button.btn.btn-primary login

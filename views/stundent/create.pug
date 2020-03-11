@@ -9,13 +9,13 @@ block content
 				.alert.alert-danger= error
 		form(action="/student/newCreate", method="POST")
 			.form-group
-			label(for="name") name
-			input#name.form-control(type="text",name="name",value = value ? vulue.name : '')
+				label(for="name") name
+				input#name.form-control(type="text",name="name",value = value ? vulue.name : '')
 			.form-group
-			label(for="phone") phone
-			input#phone.form-control(type="text",name="phone", value = value ? value.phone : '')
+				label(for="phone") phone
+				input#phone.form-control(type="text",name="phone", value = value ? value.phone : '')
 			.form-group
-			label(for="class") class
-			input#class.form-control(type="text",name="class", value = value ? value.class : '')
+				label(for="class") class
+				input#class.form-control(type="text",name="class", value = value ? value.class : '')
 			.form-group
-			button.btn.btn-primary click
+				button.btn.btn-primary click

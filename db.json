@@ -1,57 +1,24 @@
 {
   "student": [
     {
-      "name": "thong minh",
-      "id": "iVaY7FWT"
-    },
-    {
-      "name": "duong van minh",
-      "id": "0SRIyOO5"
-    },
-    {
-      "name": "i am a developmet",
-      "id": "UTSrRKWT"
-    },
-    {
-      "name": "ok van on",
-      "id": "dL8xQ5Bz"
-    },
-    {
-      "name": "ok van on",
-      "id": "GGSudy8O"
-    },
-    {
-      "id": "Ms2uJ3D4"
-    },
-    {
       "name": "duong van minh",
       "phone": "0359982580",
       "class": "c1812m",
-      "id": "wHhAHkR4"
-    },
-    {
-      "name": "",
-      "phone": "",
-      "class": "",
-      "id": "SK_jk0Tu"
-    },
-    {
-      "name": "duong van minh",
-      "phone": "",
-      "class": "",
-      "id": "okKsbC5u"
-    },
-    {
-      "name": "duong van minh",
-      "phone": "",
-      "class": "",
-      "id": "Diws1Xlm"
+      "id": "wHhAHkR4",
+      "email": "duongminh@gmail.com",
+      "password": "123456"
     },
     {
       "name": "ok van on",
       "phone": "696969969",
       "class": "c1812m",
       "id": "ma4lPNnV"
+    },
+    {
+      "name": "i am anh",
+      "phone": "0359982580",
+      "class": "da",
+      "id": "-F7O0cG9"
     }
   ]
 }

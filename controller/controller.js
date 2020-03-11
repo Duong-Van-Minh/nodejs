@@ -34,23 +34,6 @@ module.exports.postOfMe = function(req,res){
 	console.log(req.body);
 	req.body.id = shortid.generate();
 	var newStundent =req.body;
-	var errors = [];
-	if (!req.body.name) {
-		errors.push('name is required.')
-	}
-	if (!req.body.phone){
-		errors.push('phone is required')
-	}
-	if (!req.body.class){
-		errors.push('class is required')
-	}
-	if (errors.length > 0){
-		res.render('stundent/create',{
-			errors: errors,
-			value: req.boydy
-		})
-	}
-
 	db.get('student').push(newStundent).write();
 	res.redirect('/student');
 
