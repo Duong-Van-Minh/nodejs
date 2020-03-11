@@ -12,12 +12,16 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 app.set('view engine', 'pug');
 app.set('views', './views');
+
+app.use(express.static('public'));
+
 app.get('/', function(req,res){
-	res.render('stundent/index',{
-		students: db.get('student').value()
+	res.render('index',{
+		name: 'students'	
 	});
-});
+});	
 app.use('/student', Router);
+
 app.listen(port, function (){
 	console.log('Server listening on port' + port);
 })

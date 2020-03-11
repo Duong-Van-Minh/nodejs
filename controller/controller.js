@@ -14,7 +14,7 @@ module.exports.search =function(req,res){
 	});
 
 	res.render('stundent/index',{
-		students : mathFilter
+		students: mathFilter
 	})
 	console.log( typeof read);
 };
