@@ -1,14 +1,26 @@
 extends ../layouts/layout.pug
 block content
-	h1 stundent 
+	.container
+		h1 stundent 
 
-	form(action="/student/seach", method="GET")
-		input(type="text", name="q")
-		button an
-	a(href="/student/create") newCreate	
-	ul
-		each student in students
-			li 	
-				span= student.name
-				span &nbsp
-				a(href='/student/' + student.id) view
+		form.form-inline(action="/student/seach", method="GET")
+			input.form-control.mr-sm-2.my-20(type='search', placeholder='Search', aria-label='Search',width="200px")
+			button.btn.btn-outline-success.my-2(type='submit') Search
+
+		a.btn-btn-primary(href="/student/create") newCreate	
+		
+		table.table
+			tr
+				th name
+				th phone
+				th class
+				th views
+			each student in students
+				tr
+					td= student.name
+					td= student.phone
+					td= student.class
+					td
+						a(href='/student/' + student.id) view
+		
+		
