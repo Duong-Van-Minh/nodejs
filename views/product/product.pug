@@ -1,0 +1,31 @@
+extends ../layouts/product
+block content
+	.container
+		.row
+			each p in product
+				.col-md-3
+					.card(style='width: 16rem;')
+						img.card-img-top(src=p.image)
+						.card-body
+							h5.card-title=p.first_name
+							p.card-text 
+								| Some quick example text to build on the card title and make up the bulk of the card&apos;s content. 
+							a.btn.btn-primary(href='#') Go somewhere
+    
+		nav(aria-label='Page navigation example')
+			ul.pagination
+				li.page-item
+					a.page-link(href='#', aria-label='Previous')
+						span(aria-hidden='true') &laquo;
+				li.page-item
+					a.page-link(href='/product?page=1') 1	
+				li.page-item
+					a.page-link(href='/product?page=1') 2
+				li.page-item
+					a.page-link(href='/product?page=1') 3
+				li.page-item
+					a.page-link(href='#') 4
+				li.page-item 
+					a.page-link(href='#', aria-label='Next')
+						span(aria-hidden='true') &raquo;	   
+		

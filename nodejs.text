@@ -18,3 +18,10 @@ bai cookie
 
 cai cookie-parser 
 nm install cookie-parser
+
+bai ve signed cookie de thay doi cookie 
+
+bai eviroment variables
+chung ta cai npm install doenv --save
+
+bai file upload  chung ta phai npm install --save multer ,de hoc file image 

@@ -14,12 +14,15 @@ block content
 				th name
 				th phone
 				th class
+				th avata
 				th views
 			each student in students
 				tr
 					td= student.name
 					td= student.phone
 					td= student.class
+					td 
+						img(src=student.file,width='200px')
 					td
 						a(href='/student/' + student.id) view
 		

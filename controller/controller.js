@@ -31,10 +31,10 @@ module.exports.getId =function(req,res){
 	})
 };
 module.exports.postOfMe = function(req,res){
-	console.log(req.body);
+	//console.log(req.body);
+	req.body.file = req.file.path.split('/').splice(1).join('/');
 	req.body.id = shortid.generate();
-	var newStundent =req.body;
-	db.get('student').push(newStundent).write();
+	db.get('student').push(req.body).write();
 	res.redirect('/student');
 
-};
+};																																																								
